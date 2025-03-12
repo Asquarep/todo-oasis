@@ -1,0 +1,136 @@
+@use '@angular/material' as mat;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+// Define a custom typography configuration
+$my-typography: mat.define-typography-config(
+  $font-family: 'Plus Jakarta Sans, Arial, sans-serif',
+  $headline-1: mat.define-typography-level(32px, 48px, 700),
+  $body-1: mat.define-typography-level(16px, 24px, 400),
+);
+
+// Define custom color palettes using your exact hex values
+$my-primary: mat.define-palette((
+  50: #e6ebff,
+  100: #c0ccff,
+  200: #97abff,
+  300: #6e89ff,
+  400: #546fff,
+  500: #3d54ff, // Primary color
+  600: #374be6,
+  700: #2f40cc,
+  800: #2736b3,
+  900: #1a2791,
+  A100: #d2daff,
+  A200: #a6b6ff,
+  A400: #7a91ff,
+  A700: #5c79ff,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: black,
+    A200: black,
+    A400: white,
+    A700: white,
+  )
+));
+
+$my-secondary: mat.define-palette((
+  50: #f8f8fe,
+  100: #f0f0fd,
+  200: #e9e9fc, // Secondary color
+  300: #c6c6e9,
+  400: #a3a3d6,
+  500: #8080c3,
+  600: #5d5db0,
+  700: #3a3a9d,
+  800: #17178a,
+  900: #000077,
+  A100: #dadaff,
+  A200: #b5b5ff,
+  A400: #8f8fff,
+  A700: #7272ff,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: black,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: black,
+    A200: black,
+    A400: white,
+    A700: white,
+  )
+));
+
+$my-warn: mat.define-palette((
+  50: #fde3e3,
+  100: #fbbaba,
+  200: #f89191,
+  300: #f56767,
+  400: #f24747,
+  500: #ef2727,
+  600: #e51e1e,
+  700: #cc1919,
+  800: #b31414,
+  900: #A50200, // Warn color
+  A100: #ffbaba,
+  A200: #ff8585,
+  A400: #ff5050,
+  A700: #ff3737,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: black,
+    A200: black,
+    A400: white,
+    A700: white,
+  )
+));
+
+// Define the custom theme
+$my-theme: mat.define-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-secondary,
+    warn: $my-warn,
+  ),
+  typography: $my-typography,
+  density: 0
+));
+
+// Apply the custom typography and theme to Material components
+@include mat.all-component-themes($my-theme);
+@include mat.typography-hierarchy($my-typography);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  outline: none;
+}

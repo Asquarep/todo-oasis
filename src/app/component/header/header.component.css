@@ -1,0 +1,37 @@
+.circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid #F5F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 128px;
+}
+
+.nav-container {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.avatar {
+    object-fit: contain;
+    width: 52px;
+    height: 52px;
+}
+
+.notification-icon {
+    object-fit: contain;
+    width: 24px;
+    height: 24px;
+}
