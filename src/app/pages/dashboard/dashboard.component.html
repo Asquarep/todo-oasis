@@ -34,8 +34,17 @@
                             <p class="number-of-tasks">5</p>
                         </div>
                         <div class="chart-subsection">
-                            <mat-progress-spinner class="example-margin" color="primary" mode="determinate" value="45">
-                            </mat-progress-spinner>
+                            <div class="progress-container">
+                                <mat-progress-spinner
+                                  class="example-margin"
+                                  color="primary"
+                                  mode="determinate"
+                                  [strokeWidth]="10"
+                                  [diameter]="100"
+                                  [value]="progressValue">
+                                </mat-progress-spinner>
+                                <div class="progress-text">{{ progressValue }}%</div>
+                              </div>
                             <div class="badge-completed">Completed Tasks</div>
                             <p class="total-completed">5</p>
                         </div>

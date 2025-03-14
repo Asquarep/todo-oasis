@@ -178,3 +178,18 @@
 .avatar-text {
 
 }
+
+.progress-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }

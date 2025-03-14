@@ -8,6 +8,7 @@ import { NavigationService } from 'src/app/services/navigation.service';
 })
 export class DashboardComponent {
   menu = false;
+  progressValue = 45;
 
   constructor(private navigationService: NavigationService) {}
     navigateTo(url: string) {
