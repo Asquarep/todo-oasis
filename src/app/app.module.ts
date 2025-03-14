@@ -4,11 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { InputComponent } from './input/input.component';
 import { MaterialModule } from './material-module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenubarComponent } from './component/menubar/menubar.component';
-import { HomeComponent } from './component/home/home.component';
 import { TaskComponent } from './pages/task/task.component';
 import { SliderComponent } from './component/slider/slider.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -30,9 +28,7 @@ import { ProgressBarComponent } from './component/progress-bar/progress-bar.comp
 @NgModule({
   declarations: [
     AppComponent,
-    InputComponent,
     MenubarComponent,
-    HomeComponent,
     TaskComponent,
     SliderComponent,
     DashboardComponent,
