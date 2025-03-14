@@ -97,9 +97,17 @@
     gap: 25px;
 }
 .charts-section {
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
 }
 .charts {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 
 }
 .team-members {

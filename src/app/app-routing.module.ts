@@ -14,7 +14,7 @@ const routes: Routes = [
   // {path:'',component:LandingComponent, data: { title: 'Landing Page', noHeader: true } },
   {path:'login',component:LoginComponent, data: { title: 'Login', noHeader: true } },
   {path:'signup',component:SignupComponent, data: { title: 'Sign Up', noHeader: true } },
-  {path:'dashboard',component:DashboardComponent, data: { title: 'Dashboard', noHeader: false } },
+  {path:'dashboard',component:DashboardComponent, data: { title: 'Hi Anthony', noHeader: false } },
   {path:'task',component:TaskComponent, data: { title: 'Task', noHeader: false } },
   {path:'task/createTask',component:CreateTaskComponent, data: { title: 'Create Task', hasBackButton: true, backUrl:'task', noHeader: false } },
   {path:'message',component:MessageComponent, data: { title: 'Message', noHeader: false } },
