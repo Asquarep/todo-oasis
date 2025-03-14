@@ -8,7 +8,6 @@ import { MaterialModule } from './material-module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenubarComponent } from './component/menubar/menubar.component';
 import { TaskComponent } from './pages/task/task.component';
-import { SliderComponent } from './component/slider/slider.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -30,7 +29,6 @@ import { ProgressBarComponent } from './component/progress-bar/progress-bar.comp
     AppComponent,
     MenubarComponent,
     TaskComponent,
-    SliderComponent,
     DashboardComponent,
     LoginComponent,
     SignupComponent,

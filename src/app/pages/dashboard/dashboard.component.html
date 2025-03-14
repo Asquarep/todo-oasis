@@ -25,7 +25,7 @@
         </div>
         <div class="charts-section">
             <div class="charts">
-                <app-reusable-card width="402px" height="320px">
+                <mat-card class="mat-card-charts" width="100%" height="320px">
                     <div class="charts-section-container">
                         <div class="tasks">
                             <div class="tasks-header">Total Tasks</div>
@@ -50,7 +50,7 @@
                         </div>
 
                     </div>
-                </app-reusable-card>
+                </mat-card>
             </div>
             <div class="team-members">
                 <mat-card class="mat-card">
@@ -69,7 +69,7 @@
 
                                     </div>
                                     <div class="avatar-text">
-                                        <p class="avatar-text-item-bold">Anita Olusegun</p>
+                                        <p class="avatar-text-item-bold">Maria Memon</p>
                                         <p class="avatar-text-item">UI/UX Designer</p>
                                     </div>
                                 </div>
@@ -85,12 +85,12 @@
                                 </div>
                                 <div class="avatar-card">
                                     <div class="avatar-image-container">
-                                        <img src="../../../assets/girl-avatar.png" class="avatar">
+                                        <img src="../../../assets/man-avatar.png" class="avatar">
 
                                     </div>
                                     <div class="avatar-text">
-                                        <p class="avatar-text-item-bold">Anita Olusegun</p>
-                                        <p class="avatar-text-item">UI/UX Designer</p>
+                                        <p class="avatar-text-item-bold">Kingsley Dele</p>
+                                        <p class="avatar-text-item">UI Designer</p>
                                     </div>
                                 </div>
                                 <div class="avatar-card">
@@ -111,13 +111,107 @@
                 </mat-card>
             </div>
         </div>
-
-
     </div>
 
     <div class="right-section">
         <div class="calendar"></div>
-        <div class="messages"></div>
+        <div class="messages">
+            <mat-card class="mat-card-calendar">
+                <div class="calendar-section-header">
+                    <div class="calendar-text-header">
+                        <p class="calendar-text-small">July 7, 2023</p>
+                        <p class="calendar-text-big">Today</p>
+                    </div>
+                    <div class="">
+                        <button (click)="navigateTo('task/createTask')" class="button" mat-raised-button color="primary">
+                            <mat-icon class="icon">add</mat-icon>
+                            Add Task
+                        </button>
+                    </div>
+                </div>
+            </mat-card>
+        </div>
+        <div class="messages">
+            <mat-card class="mat-card-messages">
+                <mat-card-content class="mat-card-content">
+                    <div class="message-section-container">
+                        <div class="message-section-header">
+                            <p class="message-members-text">Messages</p>
+                        </div>
+                        <div class="avatars-container">
+                            <div class="avatar-card">
+                                <div class="message-image-container">
+                                    <img src="../../../assets/photo.png" class="avatar">
+
+                                </div>
+                                <div class="message-text">
+                                    <p class="message-text-item-bold">Anita Olusegun</p>
+                                    <p class="message-text-item">Thank you very much. I’m glad ...</p>
+                                </div>
+                                <!-- <div class="message-info">
+                                    <div class="message-info-one">1m ago</div>
+                                    <div class="message-info-two"><mat-icon>done_all</mat-icon></div>
+                                </div> -->
+                            </div>
+                            <div class="avatar-card">
+                                <div class="message-image-container">
+                                    <img src="../../../assets/photo (1).png" class="avatar">
+
+                                </div>
+                                <div class="message-text">
+                                    <p class="message-text-item-bold">Jakob Saris</p>
+                                    <p class="message-text-item">You : Sure! let me tell you about w…</p>
+                                </div>
+                            </div>
+                            <div class="avatar-card">
+                                <div class="message-image-container">
+                                    <img src="../../../assets/girl-avatar.png" class="avatar">
+
+                                </div>
+                                <div class="message-text">
+                                    <p class="message-text-item-bold">Emery Korsgard</p>
+                                    <p class="message-text-item">Thank’s. You are very helpful...</p>
+                                </div>
+                            </div>
+                            <div class="avatar-card">
+                                <div class="message-image-container">
+                                    <img src="../../../assets/girl-avatar.png" class="avatar">
+                                </div>
+                                <div class="message-text">
+                                    <p class="message-text-item-bold">Jeremy Zucker</p>
+                                    <p class="message-text-item">You : Sure! let me teach you about...</p>
+                                </div>
+                            </div>
+                            <div class="avatar-card">
+                                <div class="message-image-container">
+                                    <img src="../../../assets/photo (1).png" class="avatar">
+
+                                </div>
+                                <div class="message-text">
+                                    <p class="message-text-item-bold">Jakob Saris</p>
+                                    <p class="message-text-item">You : Sure! let me tell you about w…</p>
+                                </div>
+                            </div>
+                            <div class="avatar-card">
+                                <div class="message-image-container">
+                                    <img src="../../../assets/girl-avatar.png" class="avatar">
+
+                                </div>
+                                <div class="message-text">
+                                    <p class="message-text-item-bold">Emery Korsgard</p>
+                                    <p class="message-text-item">Thank’s. You are very helpful...</p>
+                                </div>
+                            </div>
+                            <button (click)="navigateTo('message')" class="message-button" mat-raised-button color="primary">
+                                See All Messages
+                            </button>
+                            
+                        </div>
+
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
 
     </div>
 

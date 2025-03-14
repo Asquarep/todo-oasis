@@ -15,4 +15,8 @@ export class HeaderComponent {
   navigateTo(url: string) {
     this.navigationService.navigateTo(url);
   }
+
+  goBack(){
+    this.navigationService.goBack();
+  }
 }
