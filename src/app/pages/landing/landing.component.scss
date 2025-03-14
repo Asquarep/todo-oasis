@@ -1,0 +1,26 @@
+@use '@angular/material' as mat;
+@import 'src/styles.scss';
+
+.get-started-two {
+    margin-top: 20px;
+    background-color: transparent; // Transparent background
+    height: 66px !important;
+    width: 200px !important;
+    color: white; // White text
+    border: 1px solid white  !important; // White border
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.get-started {
+    background-color: transparent; // Transparent background
+    height: 66px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    color: #546FFF;
+    border-radius: 4px;
+}

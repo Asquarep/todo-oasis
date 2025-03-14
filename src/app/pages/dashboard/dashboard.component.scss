@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+@import 'src/styles.scss';
+
+.search-bar {
+    mat-form-field {
+        .mat-mdc-text-field-wrapper {
+            background-color: white !important;
+            box-shadow: none;
+            border: none;
+        }
+
+        .mat-mdc-form-field-outline {
+            display: none; // Removes the outline
+        }
+
+        input.mat-mdc-input-element {
+            background-color: white !important;
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}

@@ -1,3 +1,78 @@
-<app-reusable-card title="User Profile">
-    <p>This is a user profile card.</p>
-</app-reusable-card>
+<div class="background">
+    <div class="left-section">
+        <div class="top-section">
+            <p class="name-text">Hi, Anthony</p>
+            <p class="top-text">Let's finish your task today!</p>
+            <p class="billboard">You’ve got 4 tasks today</p>
+            <mat-form-field appearance="outline" class="search-bar">
+                <mat-icon color="primary" matPrefix>search</mat-icon>
+                <input matInput placeholder="Search something..." />
+            </mat-form-field>
+        </div>
+
+        <div class="task-cards">
+            <div class="tasks-section-header">
+                <p class="ongoing">Ongoing Task</p>
+                <p (click)="navigateTo('tasks')" class="see-all">See All Tasks</p>
+            </div>
+            <div class="task-cards-flex">
+                <app-task-card task="{{'School Mgt Web App'}}" [progress]="90" date="{{'June 18, 2023'}}">
+                    <div class="badge-ongoing">3 days left</div>
+                </app-task-card>
+                <app-task-card task="{{'e Commerce Mobile App'}}" [progress]="30" date="{{'June 30, 2023'}}">
+                    <div class="badge-ongoing">3 days left</div>
+                </app-task-card>
+            </div>
+        </div>
+        <div class="charts-section">
+            <div class="charts"></div>
+            <div class="team-members"></div>
+        </div>
+        <app-reusable-card width="402px" height="320px">
+            <div class="charts-section-container">
+                <div class="tasks">
+                    <div class="tasks-header">Total Tasks</div>
+                    <p class="total-tasks">5</p>
+                    <div class="badge-orange">ongoing Tasks</div>
+                    <p class="number-of-tasks">5</p>
+                </div>
+                <div class="charts">
+                    <mat-progress-spinner class="example-margin" color="primary" mode="determinate" value="45">
+                    </mat-progress-spinner>
+                    <div class="badge-completed">Completed Tasks</div>
+                    <p class="total-completed">5</p>
+                </div>
+
+            </div>
+        </app-reusable-card>
+        <app-reusable-card width="402px" height="320px">
+            <div class="charts-section-container">
+                <div class="team">
+                    <div class="team-header">Total Tasks</div>
+                    <p class="see-all-team">See All</p>
+                    <div class="badge-orange">ongoing Tasks</div>
+                    <p class="number-of-tasks">5</p>
+                </div>
+                <div class="avatars-container">
+                    <div class="avatar-card">
+						<img src="../../../assets/girl-avatar.png" class="avatar">
+						<div class="avatar-text">
+                            <p>Anita Olusegun</p>
+                            <p>UI/UX Designer</p>
+                        </div>
+					</div>
+                </div>
+
+            </div>
+        </app-reusable-card>
+    </div>
+
+    <div class="right-section">
+        <div class="calendar"></div>
+        <div class="messages"></div>
+
+    </div>
+
+
+
+</div>

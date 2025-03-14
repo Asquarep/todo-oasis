@@ -1,1 +1,50 @@
-<p>settings works!</p>
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" [selectedIndex]="0" fitInkBarToContent>
+    <!-- First Tab -->
+    <mat-tab label="General">
+      <div class="general-settings">
+        
+        <!-- Language Dropdown -->
+        <mat-label>Language</mat-label>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-select [(ngModel)]="selectedLanguage">
+            <mat-option *ngFor="let lang of languages" [value]="lang">{{ lang }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+  
+        <!-- Timezone Dropdown -->
+        <mat-label>Timezone</mat-label>
+        <mat-form-field appearance="outline" class="full-width">
+            <mat-select [(ngModel)]="selectedTimezone">
+                <mat-option *ngFor="let tz of timezones" [value]="tz">{{ tz }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+        <!-- Radio Selector (24h / 12h) -->
+        <mat-label>Time Format</mat-label>
+        <div class="time-format">
+          <mat-radio-group [(ngModel)]="selectedFormat">
+            <mat-radio-button labelPosition="before" *ngFor="let format of timeFormats" [value]="format" class="radio-item">
+              {{ format }}
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <button mat-raised-button color="primary" class="button-width">Create Account</button>
+  
+      </div>
+      
+    </mat-tab>
+  
+    <!-- Second Tab -->
+    <mat-tab label="Notification">
+        <div class="notification-settings">
+            <mat-slide-toggle [checked]="message" color="primary">Message</mat-slide-toggle>
+            <mat-slide-toggle [checked]="taskUpdate" color="primary">Task Update</mat-slide-toggle>
+            <mat-slide-toggle [checked]="taskDeadline" color="primary">Task Deadline</mat-slide-toggle>
+            <mat-slide-toggle [checked]="mentorHelp" color="primary">Mentor Help</mat-slide-toggle>
+
+            <button mat-raised-button color="primary" class="button-width">Create Account</button>
+          </div>
+    </mat-tab>
+  </mat-tab-group>
+  

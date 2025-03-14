@@ -1,1 +1,189 @@
-<p>landing works!</p>
+<mat-toolbar color="primary" class="navbar">
+	<!-- Logo -->
+	<app-logo></app-logo>
+
+	<!-- Menu Items -->
+	<div class="nav-links">
+		<a mat-button>About Us</a>
+		<a mat-button>Features</a>
+		<a mat-button>Resources</a>
+	</div>
+
+	<!-- Get Started Button -->
+	<button (click)="navigateTo('login')" mat-raised-button class="get-started">Get Started</button>
+</mat-toolbar>
+
+<section class="hero">
+	<div class="hero-content">
+		<h1 class="header-text">Effectively Handle Your Projects</h1>
+		<p>
+			Prepare and follow work breakdown structure for effective planning, tracking, and completing tasks.
+		</p>
+		<button (click)="navigateTo('login')" mat-stroked-button color="accent.50" class="get-started-two">Get
+			Started</button>
+	</div>
+
+</section>
+<div class="hero-image">
+	<img src="../../../assets/hero.png" alt="hero" />
+</div>
+
+<section class="ultimate-solution">
+	<h2 class="customer-text">The Ultimate Solution</h2>
+	<div class="background-shape"></div>
+	<div class="content-container">
+		<div class="image-container">
+			<img src="../../../assets/Task_View.png" alt="Solution Image">
+		</div>
+		<div class="cards-container">
+			<div class="card">
+				<div class="card-header">
+					<h2 class="card-header-text">Maximise Your Productivity</h2>
+					<img src="../../../assets/chart1.svg" alt="Icon">
+				</div>
+				<p class="card-text">Lorem ipsum dolor sit amet consectetur. Et cursus sed in tincidunt curabitur justo
+					egestas ultricies sed. Aliquam tellus nulla rutrum ultrices quis. A sed id purus tristique ultricies
+					sit.
+				</p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2 class="card-header-text">Monitor & Optimise Performance</h2>
+					<img style="width: 100px;" src="../../../assets/chart2.svg" alt="Icon">
+				</div>
+				<p class="card-text">Lorem ipsum dolor sit amet consectetur. Et cursus sed in tincidunt curabitur justo
+					egestas ultricies sed. Aliquam tellus nulla rutrum ultrices quis. A sed id purus tristique ultricies
+					sit.</p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2 class="card-header-text">Collaboration Made Easy</h2>
+					<img src="../../../assets/avatars.png" alt="Icon">
+				</div>
+				<p class="card-text">Lorem ipsum dolor sit amet consectetur. Et cursus sed in tincidunt curabitur justo
+					egestas ultricies sed. Aliquam tellus nulla rutrum ultrices quis. A sed id purus tristique ultricies
+					sit.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="management">
+	<div class="mgt-flex">
+		<div class="arrow"></div>
+		<div class="management-tool">
+			<h2 class="management-text">Powerful Task Management Tool</h2>
+			<p>Lorem ipsum dolor sit amet consectetur. Et cursus sed in tincidunt curabitur justo egestas ultricies sed.
+				Aliquam tellus nulla rutrum ultrices quis. A sed id purus tristique ultricies sit.</p>
+			<button (click)="navigateTo('login')" mat-raised-button color="primary" class="management-button">Get
+				Started</button>
+		</div>
+		<div class="management-image-container">
+			<img class="managament-image" src="../../../assets/Task 1.png" alt="">
+		</div>
+
+	</div>
+
+</section>
+
+<div class="customers">
+	<div class="customer-flex">
+		<h2 class="customer-text">What Our 5,000 + Customers Say</h2>
+
+		<div class="card">
+			<div class="card-image-container">
+				<img class="card-image" src="../../../assets/cone.svg" alt="">
+			</div>
+			<div class="card-content">
+				<p>Lorem ipsum dolor sit amet consectetur. Et cursus sed in tincidunt curabitur justo egestas ultricies
+					sed. Aliquam tellus nulla rutrum ultrices quis.</p>
+				<div class="bottom-card">
+					<div class="avatars">
+						<img src="../../../assets/girl-avatar.png" class="avatar">
+						<p>Anita Olusegun</p>
+					</div>
+					<div class="arrows">
+						<mat-icon class="mat-icon">keyboard_arrow_left</mat-icon>
+						<mat-icon class="mat-icon">keyboard_arrow_right</mat-icon>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<div class="anytime">
+	<div class="hero-content">
+		<h1 class="header-text">Anytime. Anywhere.</h1>
+		<p>
+			See everything the team is working on in one place
+		</p>
+		<button (click)="navigateTo('login')" mat-raised-button class="get-started more-height">Get Started</button>
+
+	</div>
+
+</div>
+
+<div class="footer">
+	<div class="footer-image-container">
+		<img class="footer-image" src="../../../assets/world.png" alt="">
+	</div>
+	<div class="footer-flex">
+		<div class="footer-flex-one">
+			<div class="get-in-touch">
+				<p class="follow-text">GET IN TOUCH</p>
+				<div class="small-line"></div>
+				<p class="get-in-touch-text">
+					Join our mailing list to stay up to date and get notices about our new releases!
+				</p>
+			</div>
+			<div class="about">
+				<!-- <app-logo></app-logo> -->
+				<img class="logo-image" src="../../../assets/logo.png" alt="oasis-logo">
+				<p class="about-text">
+					Oasis Management Company (RC 63590) is the premier Management Consulting and Technology Services Company, focused on the continued convergence between Computing, Communications, Content and Commerce (4Cs)
+				</p>
+			</div>
+		</div>
+		<div class="footer-flex-two">
+			<div class="socials">
+				<div class="header">
+					<p class="follow-text">FOLLOW US</p>
+					<div class="small-line"></div>
+				</div>
+				<div class="socials-flex">
+					<img src="../../../assets/foundation_social-twitter.png" alt="twitter">
+					<img src="../../../assets/foundation_social-linkedin.png" alt="linkedin">
+					<img src="../../../assets/foundation_social-facebook.png" alt="facebook">
+					<img src="../../../assets/foundation_social-instagram.png" alt="instagram">
+					<img src="../../../assets/foundation_social-google-plus.png" alt="google">
+					<img src="../../../assets/foundation_social-skype.png" alt="skype">
+				</div>
+			</div>
+			<div class="follow">
+				<p class="contact-text">Phone Number: +234 701 3234 484 and +234 701 3234 480</p>
+				<p class="contact-text">{{'Email: info@oasismgt.net'}}</p>
+				<p class="contact-text">Website: www.oasismgt.com.ng</p>
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="bottom">
+		<div class="custom-divider"></div>
+		<div class="footer-text">
+			<p class="left-bottom-text">
+				© 2017 OASIS MANAGEMENT COMPANY - ALL RIGHTS RESERVED
+			</p>
+			<div class="right-bottom">
+				<p class="right-bottom-text">SITEMAP</p>
+				<p class="right-bottom-text">PRIVACY POLICY</p>
+				<p class="right-bottom-text">LEGAL  NOTICES</p>
+				<p class="right-bottom-text">REPOSITORY</p>
+				<p class="right-bottom-text">CONTACT</p>
+			</div>
+		</div>
+	</div>
+
+</div>

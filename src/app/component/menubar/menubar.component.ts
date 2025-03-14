@@ -11,7 +11,7 @@ import { filter, map } from 'rxjs/operators';
 export class MenubarComponent {
 
   pageTitle: string = '';
-  noHeader = false;
+  noHeader = true;
   hasBackButton = false;
   backUrl = '';
 

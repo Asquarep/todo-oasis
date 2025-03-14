@@ -4,7 +4,7 @@
         <div class="container">
             <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo"
                 [cdkDropListConnectedTo]="[completedList, ongoingList]" class="list"
-                (cdkDropListDropped)="drop($event)" cdkScrollable>
+                (cdkDropListDropped)="drop($event)">
                 <app-task-card task="{{item.title}}" [progress]="0" date="{{item.date}}" cdkDrag *ngFor="let item of todo">
                     <div class="badge-todo">15 days left</div>
                 </app-task-card>

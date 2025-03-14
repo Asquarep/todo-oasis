@@ -1,0 +1,146 @@
+.background {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.badge-ongoing {
+    background-color: #546FFF33;
+    color: #546FFF;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.badge-completed {
+    background-color: #E2FEED;
+    color: #20AE59;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.badge-orange {
+    background-color: #FFB800;
+    color: #141522;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.name-text {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.top-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #54577A;
+    margin-bottom: 22px;
+}
+.billboard {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+.search-bar {
+    /* min-width: 300px; */
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 32px;
+    width: 60%;
+}
+
+.task-cards {
+    width: 100%;
+    margin-top: 37px;
+}
+.tasks-section-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ongoing {
+    font-weight: 700;
+    font-size: 24px;
+    
+}
+.see-all {
+    font-weight: 600;
+    font-size: 20px;
+    color: #546FFF;
+    cursor: pointer;
+}
+.task-cards-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+}
+.charts-section {
+    background-color: red;
+}
+.charts {
+
+}
+.team-members {
+
+}
+.charts-section-container {
+
+}
+.tasks {
+
+}
+.tasks-header {
+
+}
+.total-tasks {
+
+}
+.number-of-tasks {
+
+}
+.total-completed {
+
+}
+.team {
+
+}
+.team-header {
+
+}
+.see-all-team {
+
+}
+.avatars-container {
+
+}
+.avatar-card {
+
+}
+.avatar {
+
+}
+.avatar-text {
+
+}
