@@ -110,9 +110,6 @@
     align-items: flex-start;
     
 }
-.team-members {
-    
-}
 .charts-section-container {
     display: flex;
     justify-content: space-between;
@@ -157,26 +154,98 @@
     margin-top: 20px;
     /* background-color: red; */
 }
-.team {
-
+.team-members {
+    width: 100%;
+    height: 100%;
 }
-.team-header {
-
+.team-members-text {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
 }
+.team-section-container {
+    width: 100%;
+    height: 100%;
+    /* padding: -16px; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+.team-section-header {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .see-all-team {
-
+    font-size: 10px;
+    font-weight: 400;
+    color: #546FFF;
+}
+.see-all-div {
+    /* padding: 10px; */
+    border-radius: 20px;
+    background-color: white;
+    width: 50px;
+    height: 19px;
+    cursor: pointer;
 }
 .avatars-container {
-
+    /* background-color: #546FFF; */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
 }
 .avatar-card {
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 96%;
+    height: 43px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 8.5px;
+    
+}
+.avatar-image-container{
+    height: 32px;
+    width: 32px;
 }
 .avatar {
-
+    object-fit: contain;
+    width: 100%;
 }
 .avatar-text {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #546FFF;
+    text-align: left;
+    line-height: 1.5;
+}
 
+.avatar-text-item-bold {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+.avatar-text-item {
+    font-weight: 700;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .progress-container {
@@ -192,4 +261,13 @@
     font-size: 18px;
     font-weight: bold;
     color: black;
+  }
+
+  .mat-card {
+    border-radius: 20px;
+    width: 262px;
+    height: 320px;
+    background-color: #546FFF;
+    overflow: hidden;
+
   }
