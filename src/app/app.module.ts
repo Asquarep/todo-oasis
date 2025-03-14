@@ -11,9 +11,7 @@ import { MenubarComponent } from './component/menubar/menubar.component';
 import { HomeComponent } from './component/home/home.component';
 import { TaskComponent } from './pages/task/task.component';
 import { SliderComponent } from './component/slider/slider.component';
-import { TableComponent } from './component/table/table.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PopupComponent } from './component/popup/popup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
@@ -37,8 +35,6 @@ import { ProgressBarComponent } from './component/progress-bar/progress-bar.comp
     HomeComponent,
     TaskComponent,
     SliderComponent,
-    TableComponent,
-    PopupComponent,
     DashboardComponent,
     LoginComponent,
     SignupComponent,

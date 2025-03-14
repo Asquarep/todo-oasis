@@ -4,7 +4,6 @@ import { InputComponent } from './input/input.component';
 import { HomeComponent } from './component/home/home.component';
 import { TaskComponent } from './pages/task/task.component';
 import { SliderComponent } from './component/slider/slider.component';
-import { TableComponent } from './component/table/table.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
@@ -26,7 +25,6 @@ const routes: Routes = [
   {path:'input',component:InputComponent, data: { title: 'Home', noHeader: false } },
   {path:'card',component:TaskComponent, data: { title: 'Home', noHeader: false } },
   {path:'slider',component:SliderComponent, data: { title: 'Home', noHeader: false } },
-  {path:'table',component:TableComponent, data: { title: 'Home', noHeader: false } },
 ];
 
 @NgModule({
