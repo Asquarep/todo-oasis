@@ -1,0 +1,136 @@
+.card-class {
+    margin: 3%;
+    width: 18%;
+    text-align: left;
+    float: left;
+}
+
+.background {
+    width: auto;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+}
+
+.background-two {
+    width: auto;
+    height: 60vh;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 366px;
+    overflow-y: auto;
+}
+
+.cdkScrollable {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+.list {
+    min-height: 400px;
+    width: 100%;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.box {
+    padding: 20px 10px;
+    border-bottom: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.box:last-child {
+    border: none;
+}
+
+.list.cdk-drop-list-dragging .box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.illustration-image {
+    width: 253px;
+    height: 169px;
+    object-fit: contain;
+}
+
+.info {
+    font-weight: 500;
+}
+
+.add-button {
+    margin-top: 130px;
+    width: 224px;
+    height: 55px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.badge-todo {
+    background-color: #eee;
+    color: #333;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+.badge-ongoing {
+    background-color: #546FFF33;
+    color: #546FFF;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.badge-completed {
+    background-color: #E2FEED;
+    color: #20AE59;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}

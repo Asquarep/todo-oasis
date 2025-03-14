@@ -1,5 +1,12 @@
 <div class="nav-container">
-    <h2>{{title}}</h2>
+    <div class="title-section">
+        <div class="back-button" *ngIf="hasBackButton" (click)="navigateTo(backUrl)">
+            <mat-icon class="mat-icon">keyboard_arrow_left</mat-icon>
+        </div>
+        <div class="title-text">
+            <h2>{{title}}</h2>
+        </div>
+    </div>
     <div class="nav-profile-section">
         <div class="circle">
             <img src="../../../assets/notif.svg" class="notification-icon" alt="">

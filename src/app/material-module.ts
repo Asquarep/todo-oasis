@@ -19,6 +19,8 @@ import {MatNativeDateModule} from "@angular/material/core"
 import {MatRadioModule} from "@angular/material/radio"
 import {MatCheckboxModule} from "@angular/material/checkbox"
 import {MatDialogModule} from "@angular/material/dialog"
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatDividerModule } from "@angular/material/divider";
 
 @NgModule({
 exports:[
@@ -41,7 +43,9 @@ exports:[
     MatNativeDateModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatDialogModule
+    MatDialogModule,
+    MatProgressBarModule,
+    MatDividerModule
 ]
 })
 export class MaterialModule{}

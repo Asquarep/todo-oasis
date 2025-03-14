@@ -22,6 +22,7 @@
     align-items: flex-start;
     padding-left: 35px;
     padding-right: 35px;
+    background-color: #FFFFFF;
 }
 
 .avatar {
@@ -34,4 +35,24 @@
     object-fit: contain;
     width: 24px;
     height: 24px;
+}
+
+.back-button {
+    cursor: pointer;
+}
+
+.mat-icon {
+    font-size: 30px;
+}
+
+.title-section {
+    cursor: pointer;
+    font-size: 20px;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title-text {
+    height: 30px;
 }

@@ -1,0 +1,31 @@
+<mat-card class="mat-card" [style.width]="width" [style.height]="height">
+    <mat-card-header class="mat-card-header" *ngIf="date">
+      <mat-card-title class="date">{{ date }}</mat-card-title>
+      <mat-icon class="more-vert">more_vert</mat-icon>
+    </mat-card-header>
+    <mat-card-content class="mat-card-content">
+      <div class="task-title">
+        <p>{{ task }}</p>
+      </div>
+      <div class="task-subtitle">
+        <p>{{ task }}</p>
+      </div>
+      <app-progress-bar [color]="progressColor" [progress]="progress"></app-progress-bar>
+      <div class="custom-divider"></div>
+      <div class="section-container">
+        <!-- Left Section -->
+        <div class="left-section">
+          <div class="avatar-group">
+            <img src="../../../assets/Profil.png" class="avatar">
+            <img src="../../../assets/girl-avatar.png" class="avatar">
+            <img src="../../../assets/man-avatar.png" class="avatar">
+          </div>
+          <div class="icon">
+            <mat-icon class="add-icon">add</mat-icon>
+          </div>
+        </div>
+      
+      <ng-content></ng-content>
+      </div>
+    </mat-card-content>
+</mat-card>

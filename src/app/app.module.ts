@@ -6,44 +6,52 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputComponent } from './input/input.component';
 import { MaterialModule } from './material-module';
-import { AutocompleteComponent } from './component/autocomplete/autocomplete.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MenubarComponent } from './component/menubar/menubar.component';
 import { HomeComponent } from './component/home/home.component';
-import { CardComponent } from './component/card/card.component';
+import { TaskComponent } from './pages/task/task.component';
 import { SliderComponent } from './component/slider/slider.component';
 import { TableComponent } from './component/table/table.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormdesignComponent } from './component/formdesign/formdesign.component';
 import { PopupComponent } from './component/popup/popup.component';
-import { AssociateComponent } from './component/associate/associate.component';
-import { UserdetailComponent } from './component/userdetail/userdetail.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { HeaderComponent } from './component/header/header.component';
 import { LandingComponent } from './pages/landing/landing.component';
-// import { HeaderComponent } from './header/header.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { MessageComponent } from './pages/message/message.component';
+import { ReusableCardComponent } from './component/reusable-card/reusable-card.component';
+import { LogoComponent } from './component/logo/logo.component';
+import { TaskCardComponent } from './component/task-card/task-card.component';
+import { FilterSubheaderComponent } from './component/filter-subheader/filter-subheader.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { CreateTaskComponent } from './pages/create-task/create-task.component';
+import { ProgressBarComponent } from './component/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
-    AutocompleteComponent,
     MenubarComponent,
     HomeComponent,
-    CardComponent,
+    TaskComponent,
     SliderComponent,
     TableComponent,
-    FormdesignComponent,
     PopupComponent,
-    AssociateComponent,
-    UserdetailComponent,
     DashboardComponent,
     LoginComponent,
     SignupComponent,
     HeaderComponent,
-    LandingComponent
+    LandingComponent,
+    SettingsComponent,
+    MessageComponent,
+    ReusableCardComponent,
+    LogoComponent,
+    TaskCardComponent,
+    FilterSubheaderComponent,
+    CreateTaskComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +60,8 @@ import { LandingComponent } from './pages/landing/landing.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

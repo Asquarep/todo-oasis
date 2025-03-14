@@ -1,0 +1,19 @@
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-image {
+    object-fit: contain;
+    height: 35px;  
+}
+
+.tagline {
+  margin-top: 10px;
+  color: #6B6C7E;
+  font-weight: 400;
+  font-size: 18px;
+}

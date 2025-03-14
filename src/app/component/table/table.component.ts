@@ -6,7 +6,6 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Customer } from 'src/app/Model/Customer';
 import { MasterService } from 'src/app/service/master.service';
 import { PopupComponent } from '../popup/popup.component';
-import { UserdetailComponent } from '../userdetail/userdetail.component';
 
 @Component({
   selector: 'app-table',
@@ -44,7 +43,7 @@ export class TableComponent {
   }
 
   detailcustomer(code: any) {
-    this.Openpopup(code, 'Customer Detail',UserdetailComponent);
+    // this.Openpopup(code, 'Customer Detail',UserdetailComponent);
   }
 
   

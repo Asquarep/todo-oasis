@@ -1,0 +1,40 @@
+<app-filter-subheader [showAddButton]="false"></app-filter-subheader>
+<div class="create-task">
+  <form (submit)="addTask()">
+    <div class="input-container">
+      <label>Task Title</label>
+      <mat-form-field appearance="outline" class="full-width">
+        <input matInput placeholder="School Mgt web app" [(ngModel)]="taskTitle" name="task">
+      </mat-form-field>
+    </div>
+    <div class="input-container">
+
+      <label>Description</label>
+      <mat-form-field appearance="outline" class="full-width description">
+        <textarea type="textarea" matInput [(ngModel)]="taskDescription"  name="description"
+          placeholder="add more detail description"></textarea>
+      </mat-form-field>
+    </div>
+    <div class="dock">
+      <div class="dock-item">
+        <img src="../../../assets/photo.svg" alt="">
+        <span>Add Cover</span>
+    </div>
+    <div class="dock-item">
+      <img src="../../../assets/clock.svg" alt="">
+        <span>Date</span>
+    </div>
+    <div class="dock-item">
+         <img src="../../../assets/label.svg" alt="">
+        <span>Labels</span>
+    </div>
+    <div class="dock-item">
+      <img src="../../../assets/person.svg" alt="">
+        <span>Members</span>
+    </div>
+    </div>
+    <div class="button">
+      <button class="full-width" mat-raised-button color="primary" type="submit">Add Task</button>
+    </div>
+  </form>
+</div>

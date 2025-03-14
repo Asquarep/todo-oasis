@@ -1,1 +1,34 @@
-<p>login works!</p>
+<div class="card">
+    <app-reusable-card height="699px" width="725px">
+        <app-logo [showTagline]="true"></app-logo>
+        <p class="tnc bold">Sign in with email address</p>
+
+        <div class="input-container">
+
+            <label>Email address</label>
+            <mat-form-field appearance="outline" class="full-width">
+                <input matInput type="email" placeholder="example@mail.com">
+            </mat-form-field>
+        </div>
+
+        <div class="input-container">
+            <label>Password</label>
+            <mat-form-field class="pass-form-field" appearance="outline" class="full-width">
+                <input matInput type="password" placeholder="password" >
+            </mat-form-field>
+        </div>
+        <p class="forgot-password">Forgot Password?</p>
+
+        <div (click)="navigateTo('dashboard')" >
+            <button mat-raised-button color="primary" class="full-width">Sign In</button>
+        </div>
+        <div (click)="navigateTo('signup')">
+            <button mat-stroked-button color="accent" class="full-width create">Create Account</button>
+        </div>
+
+        <p class="terms">
+            By signing in, you are agreeing to our
+            <span class="tnc">Terms & Conditions and Privacy Policy</span>
+        </p>
+    </app-reusable-card>
+</div>

@@ -1,0 +1,60 @@
+.tnc {
+    color: #546FFF;
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 26px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.full-width {
+    width: 530px;
+    height: 55px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.forgot-password {
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-left: 22px;
+    opacity: 0.6;
+}
+
+.terms {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.input-container {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.input-container label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-left: 22px;
+}
+
+.pass-form-field {
+    margin-bottom: 0;
+}
+
+.create {
+    background-color: #E9E9FC;
+}

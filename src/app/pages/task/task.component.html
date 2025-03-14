@@ -1,0 +1,48 @@
+<app-filter-subheader></app-filter-subheader>
+<div *ngIf="!noTasks()" class="background">
+    <app-reusable-card title="Task Todo" bg="#F5F5F5" height="586px" width="366px">
+        <div class="container">
+            <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo"
+                [cdkDropListConnectedTo]="[completedList, ongoingList]" class="list"
+                (cdkDropListDropped)="drop($event)" cdkScrollable>
+                <app-task-card task="{{item.title}}" [progress]="0" date="{{item.date}}" cdkDrag *ngFor="let item of todo">
+                    <div class="badge-todo">15 days left</div>
+                </app-task-card>
+            </div>
+        </div>
+    </app-reusable-card>
+
+    <app-reusable-card title="Ongoing Task" bg="#F5F5F5" height="586px" width="366px">
+        <div class="container">
+            <div cdkDropList #ongoingList="cdkDropList" [cdkDropListData]="ongoing"
+                [cdkDropListConnectedTo]="[todoList, completedList]" class="list" (cdkDropListDropped)="drop($event)">
+                <app-task-card task="{{item.title}}" [progress]="65" date="{{item.date}}" cdkDrag *ngFor="let item of ongoing">
+                    <div class="badge-ongoing">3 days left</div>
+                </app-task-card>
+            </div>
+        </div>
+    </app-reusable-card>
+
+    <app-reusable-card title="Completed Task" bg="#F5F5F5" height="586px" width="366px">
+        <div class="container">
+            <div cdkDropList #completedList="cdkDropList" [cdkDropListData]="completed"
+                [cdkDropListConnectedTo]="[todoList, ongoingList]" class="list" (cdkDropListDropped)="drop($event)">
+                <app-task-card task="{{item.title}}" [progress]="100" date="{{item.date}}" progressColor="#20AE59" cdkDrag *ngFor="let item of completed">
+                    <div class="badge-completed">Completed</div>
+                </app-task-card>
+
+            </div>
+        </div>
+    </app-reusable-card>
+
+</div>
+
+<div *ngIf="noTasks()" class="background-two">
+    <div>
+        <div class="illustration">
+            <img class="illustration-image" src="../../../assets/Illustration.png" alt="illustration">
+        </div>
+        <p class="info">You don’t have any active task, kindly create a new task to proceed</p>
+        <button (click)="navigateTo('task/createTask')" mat-raised-button color="primary" class="add-button">Create New Task</button>
+    </div>
+</div>

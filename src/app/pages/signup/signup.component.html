@@ -1,1 +1,51 @@
-<p>signup works!</p>
+<div class="card">
+    <app-reusable-card height="853px" width="725px">
+        <app-logo [showTagline]="true"></app-logo>
+        <p class="tnc bold">Create account</p>
+
+        <div class="input-container">
+
+            <label>Full name</label>
+            <mat-form-field appearance="outline" class="full-width">
+                <input matInput type="email" placeholder="Anthony Johnson">
+            </mat-form-field>
+        </div>
+        <div class="input-container">
+
+            <label>Email address</label>
+            <mat-form-field appearance="outline" class="full-width">
+                <input matInput type="email" placeholder="example@mail.com">
+            </mat-form-field>
+        </div>
+
+        <div class="input-container">
+            <label>Password</label>
+            <mat-form-field class="pass-form-field" appearance="outline" class="full-width">
+                <input matInput type="password" placeholder="password" (keyup)="onPasswordChange($event)">
+            </mat-form-field>
+        </div>
+
+        <!-- Password Strength Indicator -->
+
+        <div class="passChecker">
+            <div class="password-strength">
+                <div *ngFor="let each of strengthBlocks" class="strength-block"></div>
+            </div>
+            <p>Weak</p>
+        </div>
+            <div class="checksText">
+                <div class="checks" *ngFor="let each of passwordChecks">
+                    <mat-icon class="check-icon">check_circle</mat-icon>
+                    <div>{{each.text}}</div>
+                </div>
+            </div>
+        <div>
+            <button mat-raised-button color="primary" class="full-width" (click)="navigateTo('login')">Sign Up</button>
+        </div>
+
+        <p class="terms">
+            Already have an account click here to
+            <span class="tnc" routerLink="login" (click)="navigateTo('login')">Login</span>
+        </p>
+    </app-reusable-card>
+</div>

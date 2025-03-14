@@ -1,0 +1,25 @@
+<div class="filter-section">
+    <!-- Search Bar with Icon Inside -->
+    <mat-form-field appearance="outline" class="search-bar">
+        <mat-icon color="primary" matPrefix>search</mat-icon>
+        <input matInput placeholder="Search something..." />
+    </mat-form-field>
+
+    <!-- First Icon + Text -->
+    <div class="filter-option">
+        <img src="../../../assets/element-1.svg" alt="">
+        <span>Category</span>
+    </div>
+
+    <!-- Second Icon + Text -->
+    <div class="filter-option">
+        <mat-icon color="accent">sort</mat-icon>
+        <span>Sort By : Deadline</span>
+    </div>
+    <div *ngIf="showAddButton">
+        <button (click)="navigateTo('task/createTask')" class="button" mat-raised-button color="primary">
+            <mat-icon class="icon">add</mat-icon>
+            Add Task
+        </button>
+    </div>
+</div>
